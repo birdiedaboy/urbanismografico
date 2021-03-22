@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --bgColor: #CFC9C6;
+    
+    
+}
+
+body{
+    background-color: var(--bgColor);
+}
