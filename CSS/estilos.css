@@ -1,13 +1,182 @@
+/***********Birdies CSS**************/
+
+/* Font import */
+
+@font-face {
+    font-family: Rota;
+    font-weight: bold;
+    src: url("fonts/Rota-Black.otf") format("opentype");
+}
+@font-face {
+    font-family: InterRegular;
+    font-weight: normal;
+    src: url("fonts/Inter-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: InterSemiBold;
+    font-weight: bold;
+    src: url("fonts/Inter-SemiBold.ttf") format("truetype");
+}
+
+/* Birdies CSS-Reset */
 *{
     box-sizing: border-box;
 }
+body, h1, h2, h3, h4, h5, a {
+    padding: 0;
+    margin: 0;
+    color: var(--darkColor);
+    text-decoration: none;
+    font-style: normal;
+}
+figure, img{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 4.375rem;
+    font-family: var(--logoType);
+    line-height: 3.5rem;
+}
+h3{
+    font-size: 1.125rem;
+    font-family: InterSemiBold;
+    margin-top: 4rem;
+    
+}
+p{
+    font-size: 1.125rem;
+    font-family: InterRegular;
+    margin-bottom: 4rem;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 4rem;
+    font-size: 1.125rem;
+    font-family: InterRegular;
+}
 
+/* Birdies Variables */
 :root{
     --bgColor: #CFC9C6;
+    --darkColor: #25282A;
+    --logoType: 'Rota';
+    --border: 3rem;
+    --borderRight: 2rem;
     
     
 }
 
+/* Birdies code */
+
 body{
     background-color: var(--bgColor);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    max-width: 100vw;
+    
+    
+}
+
+/* Primer Seccion - Fija */
+
+.intro{
+    margin: 2rem;
+    padding-top: 2rem;
+    max-width: 25vw;
+    height: 30%;
+   position: sticky;
+    top: 0px;
+    
+}
+.intro h1{
+    margin-bottom: 4rem;
+}
+
+.intro article section:not(:last-child){
+    border-bottom: 3px solid var(--darkColor)
+}
+.boldie{
+    font-family: InterSemiBold;
+}
+
+/* Segunda Seccion - Scroll Proyectos */
+main{
+    margin-top: var(--border);
+    margin-right: var(--borderRight);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.logoUG{
+    text-align: end;
+    width: 100%;
+}
+.proyecto{
+    height: 40vw;
+    width: 100%;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    }
+.proyecto:nth-of-type(1):hover{
+    background-image: url(../IMG/ITDP_PedestriansFirst-Portada.png);
+    background-size:cover;
+}
+.proyecto:nth-of-type(2):hover{
+    background-image: url(../IMG/portada_PuebloBicicletero.png);
+    background-size:cover;
+}
+.proyecto:nth-of-type(3):hover{
+    background-image: url(../IMG/Portada_ManualDeCalles.png);
+    background-size:cover;
+}
+.proyecto:nth-of-type(4):hover{
+    background-image: url(../IMG/portada_CongresoNacionalCiclismoUrbano.png);
+    background-size:cover;
+}
+.proyecto:nth-of-type(5):hover{
+    background-image: url(../IMG/portada_Respetuoso.png);
+    background-size:cover;
+}
+.proyecto:nth-of-type(6):hover{
+    background-image: url(../IMG/portada_ForoMundialBicicleta.png);
+    background-size:cover;
+}
+.proyecto:nth-of-type(7):hover{
+    background-image: url(../IMG/portada_ideamos.png);
+    background-size:cover;
+}
+.proyecto:nth-of-type(8):hover{
+    background-image: url(../IMG/portada_vertebrales.svg);
+    background-size:cover;
+}
+.proyecto:nth-of-type(9):hover{
+    background-image: url(../IMG/portada_BiciRedMX-HazlaDeTos.png);
+    background-size:cover;
+}
+.proyecto:nth-of-type(10):hover{
+    background-image: url(../IMG/portada_bikenciry.png);
+    background-size:cover;
+}
+.proyecto:nth-of-type(11):hover{
+    background-image: url(../IMG/portada_camina.png);
+    background-size:cover;
+}
+.proyecto:hover .portadaProyecto{
+    opacity: 0;
+    
+}
+
+/****Footer****/
+footer address a{
+    font-family: InterSemiBold;
+    font-size: 24px;
+    margin: var(--border)
 }
