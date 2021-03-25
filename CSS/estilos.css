@@ -154,7 +154,7 @@ main{
     background-size:cover;
 }
 .proyecto:nth-of-type(8):hover{
-    background-image: url(../IMG/portada_vertebrales.svg);
+    background-image: url(../IMG/portada_vertebrales.png);
     background-size:cover;
 }
 .proyecto:nth-of-type(9):hover{
@@ -178,5 +178,19 @@ main{
 footer address a{
     font-family: InterSemiBold;
     font-size: 24px;
-    margin: var(--border)
+    margin: var(--border);
+    padding-left: 4rem;
+    padding-bottom: 8rem;
+}
+
+
+/****Version Mobile****/
+@media screen and (max-width: 600px){
+    body{
+        grid-template-columns: 1fr;
+    }
+    .intro{
+        position: relative;
+        max-width: 100vw;
+    }
 }
