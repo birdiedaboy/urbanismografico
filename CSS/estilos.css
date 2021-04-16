@@ -32,11 +32,12 @@ body, h1, h2, h3, h4, h5, a {
 figure, img{
     margin: 0;
     padding: 0;
+    object-fit: contain;
 }
 h1{
-    font-size: 4.375rem;
+    font-size: 3.125rem;
     font-family: var(--logoType);
-    line-height: 3.5rem;
+    line-height: 2.5rem;
 }
 h3{
     font-size: 1.125rem;
@@ -117,7 +118,7 @@ main{
 }
 .proyecto{
     height: 40vw;
-    width: 100%;
+    width: 80%;
     margin: 2rem;
     display: flex;
     align-items: center;
