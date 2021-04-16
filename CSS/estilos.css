@@ -117,7 +117,7 @@ main{
     width: 100%;
 }
 .proyecto{
-    height: 40vw;
+    height: 38vw;
     width: 80%;
     margin: 2rem;
     display: flex;
@@ -125,50 +125,42 @@ main{
     justify-content: center;
     position: relative;
     z-index: 100;
+    background-position: center;
+    background-size:cover;
     }
 .proyecto:nth-of-type(1):hover{
     background-image: url(../IMG/ITDP_PedestriansFirst-Portada.png);
-    background-size:cover;
 }
 .proyecto:nth-of-type(2):hover{
     background-image: url(../IMG/portada_PuebloBicicletero.png);
-    background-size:cover;
+/*    object-fit: contain;*/
 }
 .proyecto:nth-of-type(3):hover{
     background-image: url(../IMG/Portada_ManualDeCalles.png);
-    background-size:cover;
 }
 .proyecto:nth-of-type(4):hover{
     background-image: url(../IMG/portada_CongresoNacionalCiclismoUrbano.png);
-    background-size:cover;
 }
 .proyecto:nth-of-type(5):hover{
     background-image: url(../IMG/portada_Respetuoso.png);
-    background-size:cover;
 }
 .proyecto:nth-of-type(6):hover{
     background-image: url(../IMG/portada_ForoMundialBicicleta.png);
-    background-size:cover;
 }
 .proyecto:nth-of-type(7):hover{
     background-image: url(../IMG/portada_ideamos.png);
-    background-size:cover;
 }
 .proyecto:nth-of-type(8):hover{
     background-image: url(../IMG/portada_vertebrales.png);
-    background-size:cover;
 }
 .proyecto:nth-of-type(9):hover{
     background-image: url(../IMG/portada_BiciRedMX-HazlaDeTos.png);
-    background-size:cover;
 }
 .proyecto:nth-of-type(10):hover{
     background-image: url(../IMG/portada_bikenciry.png);
-    background-size:cover;
 }
 .proyecto:nth-of-type(11):hover{
     background-image: url(../IMG/portada_camina.png);
-    background-size:cover;
 }
 .proyecto:hover .portadaProyecto{
     opacity: 0;
