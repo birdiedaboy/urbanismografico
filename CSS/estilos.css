@@ -124,11 +124,8 @@ main{
 .logoUG{
     text-align: end;
     width: 100%;
-}
-.link{
-    display: block;
-    width: 100%;
-    margin: 0 auto;
+    position: sticky;
+    top: 1rem;
 }
 .proyecto{
     height: 38vw;
