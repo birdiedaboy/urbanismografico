@@ -81,15 +81,24 @@ body{
     
 }
 
+/*Scroll bars*/
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 /* Primer Seccion - Fija */
 
 .intro{
     margin: 2rem;
     padding-top: 2rem;
     max-width: 25vw;
-    height: 30%;
-   position: sticky;
+    max-height: 100vh;
+    position: sticky;
     top: 0px;
+    overflow-y: auto;
+    scrollbar-color: none;
+    scrollbar-width: none;
     
 }
 .intro h1{
@@ -171,9 +180,7 @@ main{
 footer address a{
     font-family: InterSemiBold;
     font-size: 24px;
-    margin: var(--border);
-    padding-left: 4rem;
-    padding-bottom: 8rem;
+    padding-bottom: 3rem;
 }
 footer address a:hover{
     color: #006FAB;
