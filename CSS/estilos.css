@@ -125,6 +125,11 @@ main{
     text-align: end;
     width: 100%;
 }
+.link{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
 .proyecto{
     height: 38vw;
     width: 80%;
