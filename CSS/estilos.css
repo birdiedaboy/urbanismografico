@@ -19,8 +19,11 @@
 }
 
 /* Birdies CSS-Reset */
-*{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 body, h1, h2, h3, h4, h5, a {
     padding: 0;
@@ -136,11 +139,14 @@ main{
     justify-content: center;
     position: relative;
     z-index: 100;
-    background-position: center;
-    background-size:cover;
+    
+    transition: background 1s;
     }
 .proyecto:nth-of-type(1):hover{
-    background-image: url(../IMG/ITDP_PedestriansFirst-Portada.png);
+    background: url(../IMG/ITDP_PedestriansFirst-Portada.png);
+    transition: background 2s;
+    background-position: center;
+    background-size:cover;
 }
 .proyecto:nth-of-type(2):hover{
     background-image: url(../IMG/portada_PuebloBicicletero.png);
