@@ -3,21 +3,24 @@
 /* Font import */
 
 @font-face {
-    font-family: Rota;
-    font-weight: bold;
-    src: url("fonts/Rota-Black.otf") format("opentype");
-}
-
-@font-face {
-    font-family: InterRegular;
+    font-family: 'CircularStd-Book';
     font-weight: normal;
-    src: url("fonts/Inter-Regular.ttf") format("truetype");
+    src: url("fonts/CircularStd-Book.woff2") format("woff2");
 }
-
 @font-face {
-    font-family: InterSemiBold;
+    font-family: 'CircularStd-BookItalic';
     font-weight: bold;
-    src: url("fonts/Inter-SemiBold.ttf") format("truetype");
+    src: url("fonts/CircularStd-BookItalic.woff2") format("woff2");
+}
+@font-face {
+    font-family: 'CircularStd-Medium';
+    font-weight: bold;
+    src: url("fonts/CircularStd-Medium.woff2") format("woff2");
+}
+@font-face {
+    font-family: 'CircularStd-Bold';
+    font-weight: bold;
+    src: url("fonts/CircularStd-Bold.woff2") format("woff2");
 }
 
 /* Birdies CSS-Reset */
@@ -51,23 +54,38 @@ img {
     padding: 0;
     object-fit: contain;
 }
+/* Birdies Variables */
+:root {
+    --bgColor: #CFC9C6;
+    --darkColor: #25282A;
+    --logoType: 'Rota';
+    --border: 3rem;
+    --borderRight: 2rem;
+    --txtBook: 'CircularStd-Book';
+    --txtBookItalic: 'CircularStd-BookItalic';
+    --txtMedium: 'CircularStd-Medium' ;
+    --txtBold: 'CircularStd-Bold';
+
+
+}
+
 
 h1 {
     font-size: 3.125rem;
-    font-family: var(--logoType);
-    line-height: 2.5rem;
+    font-family: var(--txtBook);
+    line-height: 1em;
 }
 
 h3 {
     font-size: 1.125rem;
-    font-family: InterSemiBold;
+    font-family: var(--txtBold);
     margin-top: 4rem;
 
 }
 
 p {
     font-size: 1.125rem;
-    font-family: InterRegular;
+    font-family: var(--txtBook);
     margin-bottom: 4rem;
 }
 
@@ -76,19 +94,9 @@ ul {
     padding: 0;
     margin-bottom: 4rem;
     font-size: 1.125rem;
-    font-family: InterRegular;
+    font-family: var(--txtBook);
 }
 
-/* Birdies Variables */
-:root {
-    --bgColor: #CFC9C6;
-    --darkColor: #25282A;
-    --logoType: 'Rota';
-    --border: 3rem;
-    --borderRight: 2rem;
-
-
-}
 
 /* Birdies code */
 
@@ -111,8 +119,8 @@ body {
 /* Primer Seccion - Fija */
 
 .intro {
-    margin: 2rem;
-    padding-top: 2rem;
+    margin: 2em;
+    padding-top: 2em;
     max-width: 25vw;
     max-height: 100vh;
     position: sticky;
@@ -122,9 +130,15 @@ body {
     scrollbar-width: none;
 
 }
+.ugText{
+    font-family: var(--txtBook);
+    font-size: 9rem;
+    margin: 0;
+    margin-bottom: .5em;
+}
 
 .intro h1 {
-    margin-bottom: 4rem;
+    margin-bottom: 2em;
 }
 
 .intro article section:not(:last-child) {
@@ -149,7 +163,7 @@ main {
     text-align: end;
     width: 100%;
     position: sticky;
-    top: 1rem;
+    top: 2em;
 }
 
 .proyecto {
@@ -249,7 +263,7 @@ main {
 
 /****Footer****/
 footer address a {
-    font-family: InterSemiBold;
+    font-family: var(--txtBookItalic);
     font-size: 1.3rem;
     padding-bottom: 3rem;
 }
@@ -302,4 +316,3 @@ footer address a:hover {
     }
 
 }
-
