@@ -148,7 +148,7 @@ body {
 }
 
 .boldie {
-    font-family: InterSemiBold;
+/*    font-family: InterSemiBold;*/
 }
 
 /* Segunda Seccion - Scroll Proyectos */
@@ -163,9 +163,10 @@ main {
 
 .logoUG {
     text-align: end;
-    width: 100%;
+    width: 8%;
     position: sticky;
-    top: 2em;
+    top: 5em;
+    margin-left: auto;
 }
 
 .proyecto {
