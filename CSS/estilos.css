@@ -77,9 +77,10 @@ h1 {
 }
 
 h3 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-family: var(--txtBold);
     margin-top: 4rem;
+    letter-spacing: .02em;
 
 }
 
@@ -87,6 +88,7 @@ p {
     font-size: 1.125rem;
     font-family: var(--txtBook);
     margin-bottom: 4rem;
+    letter-spacing: .02em;
 }
 
 ul {
