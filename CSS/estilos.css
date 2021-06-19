@@ -61,10 +61,10 @@ img {
     --logoType: 'Rota';
     --border: 3rem;
     --borderRight: 2rem;
-    --txtBook: 'CircularStd-Book';
-    --txtBookItalic: 'CircularStd-BookItalic';
-    --txtMedium: 'CircularStd-Medium' ;
-    --txtBold: 'CircularStd-Bold';
+    --txtBook: 'CircularStd-Book', sans-serif;
+    --txtBookItalic: 'CircularStd-BookItalic', sans-serif;
+    --txtMedium: 'CircularStd-Medium', sans-serif ;
+    --txtBold: 'CircularStd-Bold', sans-serif;
 
 
 }
