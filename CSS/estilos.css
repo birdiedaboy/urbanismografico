@@ -220,7 +220,6 @@ main {
     display: flex;
     gap: 2rem;
     flex-direction: column;
-    align-content: center;
     align-items: center;
 }
 
@@ -232,94 +231,74 @@ main {
 }
 
 .proyecto {
-    height: 38vw;
     height: clamp(15rem, 1rem + 38vw, 40rem);
     width: 80%;
-/*        margin: 2rem;*/
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 100;
+     transition: all 2s;
 }
 
-
-.proyecto:nth-of-type(1):hover {
-    background: url(../IMG/ITDP_PedestriansFirst-Portada.png);
-    transition: background 2s;
+.proyecto:hover{
+    transition: all 2s;
     background-position: center;
     background-size: cover;
-    z-index: 100;
+}
+.proyecto:nth-of-type(1):hover {
+    background: url(../IMG/ITDP_PedestriansFirst-Portada.png);
+    background-position: center;
 }
 
 .proyecto:nth-of-type(2):hover {
     background: url(../IMG/portada_PuebloBicicletero.png);
-    transition: background 2s;
     background-position: center;
-    background-size: cover;
 }
 
 .proyecto:nth-of-type(3):hover {
     background: url(../IMG/Portada_ManualDeCalles.png);
-    transition: background 2s;
     background-position: center;
-    background-size: cover;
 }
 
 .proyecto:nth-of-type(4):hover {
     background: url(../IMG/portada_CongresoNacionalCiclismoUrbano.png);
-    transition: background 2s;
     background-position: center;
-    background-size: cover;
 }
 
 .proyecto:nth-of-type(5):hover {
     background: url(../IMG/portada_Respetuoso.png);
-    transition: background 2s;
     background-position: center;
-    background-size: cover;
 }
 
 .proyecto:nth-of-type(6):hover {
     background: url(../IMG/portada_ForoMundialBicicleta.png);
-    transition: background 2s;
     background-position: center;
-    background-size: cover;
 }
 
 .proyecto:nth-of-type(7):hover {
     background: url(../IMG/portada_ideamos.png);
-    transition: background 2s;
     background-position: center;
-    background-size: cover;
 }
 
 .proyecto:nth-of-type(8):hover {
     background: url(../IMG/portada_vertebrales.png);
-    transition: background 2s;
     background-position: center;
-    background-size: cover;
 }
 
 .proyecto:nth-of-type(9):hover {
     background: url(../IMG/portada_BiciRedMX-HazlaDeTos.png);
-    transition: background 2s;
     background-position: center;
-    background-size: cover;
 }
 
 .proyecto:nth-of-type(10):hover {
     background: url(../IMG/portada_bikenciry.png);
-    transition: background 2s;
     background-position: center;
-    background-size: cover;
 }
 
 .proyecto:nth-of-type(11):hover {
     background: url(../IMG/portada_camina.png);
-    transition: background 2s;
     background-position: center;
-    background-size: cover;
 }
 
 .portadaProyecto img {
@@ -329,6 +308,7 @@ main {
 
 .proyecto:hover .portadaProyecto {
     opacity: 0;
+    transition: all 180ms;
 
 }
 
@@ -370,13 +350,12 @@ footer address a:hover {
     .portadaProyecto {
         display: flex;
         justify-content: center;
-        align-items: center;
+/*        align-items: center;*/
 
     }
 
     .portadaProyecto img {
-        height: 9rem;
-        width: 80%;
+        max-height: 9rem;
     }
 
     .logoUG {
