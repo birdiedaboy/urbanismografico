@@ -7,16 +7,19 @@
     font-weight: normal;
     src: url("fonts/CircularStd-Book.woff2") format("woff2");
 }
+
 @font-face {
     font-family: 'CircularStd-BookItalic';
     font-weight: bold;
     src: url("fonts/CircularStd-BookItalic.woff2") format("woff2");
 }
+
 @font-face {
     font-family: 'CircularStd-Medium';
     font-weight: bold;
     src: url("fonts/CircularStd-Medium.woff2") format("woff2");
 }
+
 @font-face {
     font-family: 'CircularStd-Bold';
     font-weight: bold;
@@ -51,6 +54,7 @@ img {
     padding: 0;
     object-fit: contain;
 }
+
 /* Birdies Variables */
 :root {
     --bgColor: #CFC9C6;
@@ -60,7 +64,7 @@ img {
     --borderRight: 2rem;
     --txtBook: 'CircularStd-Book';
     --txtBookItalic: 'CircularStd-BookItalic';
-    --txtMedium: 'CircularStd-Medium' ;
+    --txtMedium: 'CircularStd-Medium';
     --txtBold: 'CircularStd-Bold';
 
 
@@ -99,7 +103,8 @@ ul {
 /* Selection color */
 
 ::selection {
-  background-color: hsl(0 0% 10% / .2);
+    background-color: hsl(0 0% 10% / 1);
+    color: var(--bgColor)
 }
 
 /*Scroll bars*/
@@ -117,17 +122,7 @@ ul {
     border-radius: 100vw;
     border: .35rem solid var(--darkColor);
 }
-.intro::-webkit-scrollbar {
-    width: .45rem;
-}
-.intro::-webkit-scrollbar-track {
-    background: transparent;
-}
 
-.intro::-webkit-scrollbar-thumb {
-    background-color: var(--darkColor);
-/*    border: .25rem solid var(--darkColor);*/
-}
 
 @supports (scrollbar-color: red blue) {
     * {
@@ -135,6 +130,7 @@ ul {
         scrollbar-width: auto;
     }
 }
+
 /* Birdies code */
 
 body {
@@ -148,42 +144,56 @@ body {
 
 }
 
-
-
-
 /* Primer Seccion - Fija */
 
 .intro {
     padding-inline-start: 2rem;
     padding-block-start: 2rem;
-/*    width: clamp(15rem, 1rem + 20vw, 40rem);*/
+    /*    width: clamp(15rem, 1rem + 20vw, 40rem);*/
     max-height: 100vh;
     position: sticky;
     top: 0px;
     overflow-y: auto;
     scrollbar-color: var(--darkColor) var(--bgColor);
     scrollbar-width: auto;
-    
-    display: flow-root;
+    display: flex;
+    flex-direction: column
 
 }
-.ugText{
+
+.intro::-webkit-scrollbar {
+    width: .45rem;
+}
+
+.intro::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.intro::-webkit-scrollbar-thumb {
+    background-color: var(--darkColor);
+    /*    border: .25rem solid var(--darkColor);*/
+}
+
+.ugText {
     font-family: var(--txtBook);
     font-size: 9rem;
     margin: 0;
-    margin-block-end: .5em;
-    
+    margin-block-end: 4rem;
+
 }
 
 .intro h1 {
-    margin-block-end: 2em;
+    margin-block-end: 2.5rem;
 }
-.bookD{
-    padding: 1.5rem 3rem;
+
+.bookD {
+    padding-block: 1.5rem;
     background-color: var(--darkColor);
     color: var(--bgColor);
     font-family: var(--txtBook);
     font-size: 1.5rem;
+    text-align: center;
+    max-width: 12rem;
 }
 
 .intro article section:not(:last-child) {
@@ -216,7 +226,7 @@ main {
     height: 38vw;
     height: clamp(15rem, 1rem + 38vw, 40rem);
     width: 80%;
-/*    margin: 2rem;*/
+    /*    margin: 2rem;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,10 +312,11 @@ main {
     background-position: center;
     background-size: cover;
 }
+
 .portadaProyecto img {
-        width: 80%;
+    width: 80%;
     max-height: 15rem;
-    }
+}
 
 .proyecto:hover .portadaProyecto {
     opacity: 0;
@@ -332,7 +343,7 @@ footer address a:hover {
 
     .intro {
         position: relative;
-        max-width: 45ch;
+        max-width: 95%;
         max-height: 100%;
         overflow-y: hidden;
     }
