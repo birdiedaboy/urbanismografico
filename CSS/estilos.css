@@ -195,12 +195,14 @@ body {
     text-align: center;
     max-width: 12rem;
     border: .25rem solid var(--darkColor);
+    transition: all 600ms;
 }
 .bookD:hover,
 .bookD:focus{
     background-color: var(--bgColor);
     color: var(--darkColor);
     border: .25rem solid var(--darkColor);
+    transition: all 600ms;
 }
 
 .intro article section:not(:last-child) {
@@ -233,14 +235,14 @@ main {
     height: 38vw;
     height: clamp(15rem, 1rem + 38vw, 40rem);
     width: 80%;
-    /*    margin: 2rem;*/
+/*        margin: 2rem;*/
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 100;
-    transition: all 2s;
 }
+
 
 .proyecto:nth-of-type(1):hover {
     background: url(../IMG/ITDP_PedestriansFirst-Portada.png);
@@ -354,6 +356,7 @@ footer address a:hover {
         max-height: 100%;
         overflow-y: hidden;
     }
+ 
 
     main {
         width: 100%;
@@ -385,5 +388,8 @@ footer address a:hover {
     .logoUG img {
         width: 15%;
     }
+       footer{
+    border-bottom: 3px solid var(--darkColor)
+}
 
 }
