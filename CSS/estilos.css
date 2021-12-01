@@ -187,13 +187,20 @@ body {
 }
 
 .bookD {
-    padding-block: 1.5rem;
+    padding-block: 1.25rem;
     background-color: var(--darkColor);
     color: var(--bgColor);
     font-family: var(--txtBook);
     font-size: 1.5rem;
     text-align: center;
     max-width: 12rem;
+    border: .25rem solid var(--darkColor);
+}
+.bookD:hover,
+.bookD:focus{
+    background-color: var(--bgColor);
+    color: var(--darkColor);
+    border: .25rem solid var(--darkColor);
 }
 
 .intro article section:not(:last-child) {
